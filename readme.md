@@ -1,3 +1,17 @@
+Passo a passo para rodar a aplicação:
+1 - Lembre-se de usar a versão mais atualizada do PHP, ou maior que 7.0.
+2 - Instale o composer no seu PC.
+3 - Instale o Laravel usando o compositor.
+4 - Dê o git clone, logo depois de fazer isso use o comando composer install. Coloque o Laravel e o composer como variáveis no seu ambiente, assim vc pode utilizar seus comandos em linha.
+5 - Após isto usar o comando php artisan generate:key, para que a aplicação gere sua chave, caso esta não esteja criada, certificar no arquivo .env em APP_KEY.
+6 - Crie um banco de dados para a aplicação na sua máquina.
+7 - Abra o arquivo .env e modifique os seguintes campos:
+    DB_DATABASE = nome do banco criado acima;
+    DB_USERNAME = nome do seu usuário em seu banco;
+    DB_PASSWORD = coloque a senha de acesso ao seu banco, caso não tenha, deixe vazio.
+8 - Use o comando php artisan migrate para que o sistema crie as tabelas no bando de dados.
+9 - suba o servidor e comece a utilizar a aplicação, o comando php artisan serve para subir o servidor de testes localmente.
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
